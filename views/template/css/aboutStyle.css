@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+
+
+
+/**********************Header***********************/
+.topHeaderSection {
+    height: 60px;
+}
+
+.social {
+    padding-left: 150px;
+}
+.telephoneNumber {
+    padding-top: 10px; 
+}
+
+.telephoneNumberAbout {
+    color: rgb(203,166,96);
+}
+
+.mainHeaderLine {
+    height: 93px;
+    background: rgb(203,166,96); 
+}
+
+.mainHeaderLineAbout {
+    background: rgba(203, 166, 96);
+}
+
+
+
+
+
+.nav {
+    border-bottom: 1px solid;
+}
+
+li {
+    width: 200px;
+}
+/**********************Body***********************/
+
+
+.btn {
+    background: rgb(78, 78, 78);
+    border-color: rgb(78, 78, 78);  
+}
+
+.btn:hover {
+    color: rgb(203,166,96);
+    background: rgb(1,1,1);
+    border: 0px;
+    border-color: rgb(1, 1, 1);  
+}
+
+.btn:active {
+    background: rgb(1,1,1);
+    border: 0px;
+    border-color: rgb(1, 1, 1);
+}
+
+.producerPhoto {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.producerPhoto img {
+    height: 100%;
+    width: 100%;
+}
+
+.producerDescription {
+    padding: 5px 40px;
+    height: auto;
+    background: rgb(203,166,96);
+}
+
+.otherDescription{
+    background: rgb(207, 179, 128);
+}
+/**********************About************************/
+
+.aboutDescriptionSection {
+    height: auto;
+}
+/**********************Footer***********************/
+
+.footerSection {
+    height: 400px;
+    background: rgb(203,166,96); 
+}
+
+/**********************Fonts***********************/
+.mainLogo {
+    color: rgb(0, 0, 0);
+}
+
+.mainHeaderLine {
+    line-height: 93px;
+    font-size: 3.3vw;
+    font-family: 'Yeseva One', cursive;
+}
+
+.telephoneNumber {
+    font-size: 1vw;
+    font-family: 'Yeseva One', cursive;
+}
+
+a {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Yeseva One', cursive;
+}
+
+
+a:hover {
+    color: rgb(203,166,96);
+    text-decoration: none; 
+}
+
+h4 {
+    color: rgb(1,1,1);
+    font-family: 'Yeseva One', cursive;
+}
+
+.aboutDescriptionSection p {
+    font-size: 2vh;
+    color: rgb(0, 0, 0);
+    font-family: 'Yeseva One', cursive;
+    font-style: italic;
+}
+
+.footerInfo p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.footerTelephoneNumber p {
+    color: rgb(1,1,1);
+    font-size: 3vw;
+    font-family: 'Yeseva One', cursive;
+}
+
+.producerDescription p {
+    font-size: 1.7vh;
+    color: rgb(0, 0, 0);
+    font-family: 'Yeseva One', cursive;
+    font-style: italic;
+}
+
+/**********************Other***********************/
+.spacing {
+    background: transparent;
+    height: 30px;
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+/* Header */
+
+.adminHeader {
+    height: 10vh;
+    background: rgb(53,53,53);
+}
+
+div.navButton {
+    height: 10vh;
+}
+
+div.navButton:hover {
+    color: rgb(5,166,207);
+    border-bottom:4px solid;
+    border-bottom-color: rgb(5,166,207);
+}
+
+/* Main */
+
+
+
+body {
+    background: rgba(103, 103, 103, 0.288);
+}
+
+.adminSection {
+    height: 100vh;
+}
+
+.adminPublictionSection {
+    background: rgba(5, 167, 207, 0.308);
+    height: 8vh;
+}
+
+.adminLeftSection {
+    height: 100vh;
+    background: rgb(103,103,103 );
+}
+
+.adminRightSection {
+    height: 100vh;
+    background: rgb(5, 166, 207);
+}
+
+.adminSectionPublicationEdit {
+    height: auto;
+    background: rgba(5, 167, 207, 0.308);
+}
+
+
+.spacing {
+    background: transparent;
+    height: 30px;
+}
+
+.info {
+    margin-top: 30vh;
+}
+
+/* Signup Form */
+
+.signup{
+    width: 600px;
+    margin-top: 30vh;
+    margin-left: 5vw;
+}
+
+.signupRegister {
+    width: 600px;
+    margin-top: 23vh;
+    margin-left: 5vw;
+}
+
+.form-control, .btn, .well {
+    border-radius: 0;
+
+}
+.form-control {
+    background: rgb(5, 166, 207);
+}
+
+.form-control:focus {
+    background: rgb(5, 166, 207);
+}
+
+label {
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+}
+
+input::-webkit-input-placeholder,{
+    color: rgb(255, 255, 255) !important;
+}
+
+input::-moz-placeholder {
+    color: rgb(255, 255, 255) !important;
+}
+
+.btn {
+    color: rgb(5, 166, 207);
+    background: rgb(255, 255, 255);
+}
+
+
+
+
+/* Font */
+
+
+.adminHeader a  {
+    line-height: 9vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.adminHeader a:hover {
+    color: rgb(5, 166, 207);
+    text-decoration: none;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}

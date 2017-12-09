@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+
+
+
+/**********************Header***********************/
+.topHeaderSection {
+    height: 60px;
+}
+
+.social {
+    padding-left: 150px;
+}
+.telephoneNumber {
+    padding-top: 10px; 
+}
+
+.telephoneNumber {
+    color: rgb(203,166,96);
+}
+
+.mainHeaderLine {
+    height: 93px;
+    background: rgb(203,166,96); 
+}
+
+.mainHeaderLineAbout {
+    background: rgba(203, 166, 96);
+}
+
+.mainHeaderLineAbout:hover {
+    background: rgb(203,166,96);
+}
+
+
+
+.nav {
+    border-bottom: 1px solid;
+}
+
+li {
+    width: 200px;
+}
+/**********************Body***********************/
+
+
+.card {
+    background: rgb(196,196,196);
+    border-radius: 0px;
+    border: 0px;     
+}
+
+.card:hover {
+    background: rgb(203,166,96); 
+}
+
+.btn {
+    background: rgb(78, 78, 78);
+    border-color: rgb(78, 78, 78);  
+}
+
+.btn:hover {
+    color: rgb(203,166,96);
+    background: rgb(1,1,1);
+    border: 0px;
+    border-color: rgb(1, 1, 1);  
+}
+
+.btn:active {
+    background: rgb(1,1,1);
+    border: 0px;
+    border-color: rgb(1, 1, 1);
+}
+
+.producerPhoto {
+    padding: 0px;
+}
+
+.producerDescription {
+    padding: 30px 20px;
+}
+
+.afishaItemDate {
+    line-height: 0px;
+    height: 120px;
+}
+
+.afishaItemDate h1 {
+    line-height: 70px;
+}
+
+.afishaItemInfo {
+    line-height: 12px;
+}
+
+
+
+.afishaItemInfo h4 {
+    padding-top: 4px; 
+}
+
+.afishaItemButton a {
+    line-height: 120px;
+    padding: 5px;
+}
+
+
+.spectacleAvatar {
+    padding: 0px;
+    height: 450px;
+}
+
+.spectacleAvatar img {
+    height: 100%;
+    width: 100%;
+}
+
+.spectacleImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.spectacleDescription {
+    height: auto;
+    padding: 15px 20px;
+    background: rgb(203,166,96);
+}
+
+.spectacleDescription a {
+    border: 1px rgb(1, 1, 1) solid;
+    padding: 5px;
+}
+
+.spectacleDescription a:hover {
+    background: rgb(0, 0, 0);
+}
+
+.topAreaDescription {
+    height: 390px;
+}
+
+.buttonAreaDescription {
+    padding: 0;
+}
+
+.viewDescription {
+    height: auto;
+}
+
+/**********************About************************/
+
+
+
+/**********************Footer***********************/
+
+.footerSection {
+    height: 30%;
+    background: rgb(203,166,96); 
+}
+
+/**********************Fonts***********************/
+
+
+.mainHeaderLine {
+    line-height: 93px;
+    font-size: 3.3vw;
+    font-family: 'Yeseva One', cursive;
+}
+
+.telephoneNumber {
+    font-size: 1vw;
+    font-family: 'Yeseva One', cursive;
+}
+
+a {
+    font-size: 20px;
+    color: rgb(1,1,1);
+    font-family: 'Yeseva One', cursive;
+}
+
+a .topHeaderLineAbout {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Yeseva One', cursive;
+}
+
+a:hover {
+    color: rgb(203,166,96);
+    text-decoration: none; 
+}
+
+h1,h2,h3,h4,h5 {
+    color: rgb(1,1,1);
+    font-family: 'Yeseva One', cursive;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+.footerInfo p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.card-text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+}
+
+.footerTelephoneNumber p {
+    color: rgb(1,1,1);
+    font-size: 3vw;
+    font-family: 'Yeseva One', cursive;
+}
+
+.afishaItemInfo p {
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+}
+
+.spectacleDescription p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+    font-size: 2.1vh;
+}
+
+.viewDescription p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+
+/**********************Other***********************/
+.spacing {
+    background: transparent;
+    height: 30px;
+}
+
+.spacingBorder {
+    background: transparent;
+    height: 30px;
+    border-top: 1px rgb(1, 1, 1) solid;
+    border-bottom: 1px rgb(1, 1, 1) solid; 
+}
