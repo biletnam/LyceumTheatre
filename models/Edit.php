@@ -48,7 +48,7 @@ public static function createAfishaItem($day, $month, $dweek, $spectacleName, $a
     $result->bindParam(':spectacleName', $spectacleName, PDO::PARAM_STR);
     $result->bindParam(':adress', $adress, PDO::PARAM_STR);
     $result->bindParam(':time', $time, PDO::PARAM_STR);
-    $result->bindParam(':spectacleId', $time, PDO::PARAM_STR);
+    $result->bindParam(':spectacleId', $spectacleId, PDO::PARAM_STR);
 
     return $result->execute();     
 }

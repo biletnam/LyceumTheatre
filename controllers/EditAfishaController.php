@@ -28,6 +28,7 @@ class EditAfishaController extends AdminBase
         $spectacleName = '';
         $adress = '';
         $time = '';
+        $spectacleId = '';
 
 
         if (isset($_POST['submit'])) {
@@ -37,6 +38,7 @@ class EditAfishaController extends AdminBase
             $spectacleName = $_POST['spectacleName'];
             $adress = $_POST['adress'];
             $time = $_POST['time'];
+            $spectacleId = $_POST['spectacleId'];
 
             Edit::createAfishaItem($day, $month, $dweek, $spectacleName, $adress, $time, $spectacleId);
             header("Location: /edit/afisha");
