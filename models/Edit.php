@@ -89,6 +89,33 @@ $result->bindParam(':id', $id, PDO::PARAM_STR);
 return $result->execute();
 }
 
+public static function createReviews($name, $surename, $reviews, $spectacle_id) {
+    $db = Db::getConnection();
+    
+    $sql = 'INSERT INTO reviews (name, surename, reviews, spectacle_id) '
+            . 'VALUES (:name, :surename, :reviews, :spectacle_id)';
+    
+    $result = $db->prepare($sql);
+    $result->bindParam(':name', $name, PDO::PARAM_STR);
+    $result->bindParam(':surename', $surename, PDO::PARAM_STR);
+    $result->bindParam(':reviews', $reviews, PDO::PARAM_STR);
+    $result->bindParam(':spectacle_id', $spectacle_id, PDO::PARAM_STR);
+    
+    return $result->execute();     
+}
+
+public static function deleteReviewsItem($id){
+    
+    $db = Db::getConnection();
+                
+    $sql = 'DELETE FROM `reviews` WHERE `reviews`.`id` = :id';
+                
+    $result = $db->prepare($sql);
+    $result->bindParam(':id', $id, PDO::PARAM_STR);
+                
+    return $result->execute();
+}
+
 
 
 }

@@ -8,6 +8,7 @@
             <a href="/edit/news" type="button" class="btn btn-secondary">Редактор Новостей</a>
             <a href="/edit/spectacle" type="button" class="btn btn-secondary">Редактор Спектаклей</a>
             <a href="/edit/afisha" type="button" class="btn btn-secondary">Редактор раздела "Афиша"</a>
+            <a href="/edit/reviews" type="button" class="btn btn-secondary">Редактор Отзывов</a>
         </div>
 </div> <!-- col-lg-4 -->
 <div class="col-lg-12 spacing"></div>

@@ -1,7 +1,9 @@
 <?php
 
 return array(
-
+    //EditReviews
+    'edit/reviews/delete/([0-9]+)' => 'editReviews/delete/$1',
+    'edit/reviews' => 'editReviews/index',
     
    //EditAfisha
     'edit/afisha/create' => 'editAfisha/create',

@@ -9,46 +9,39 @@
             <a href="/edit/spectacle" type="button" class="btn btn-secondary">Редактор Спектаклей</a>
             <a href="/edit/afisha" type="button" class="btn btn-secondary">Редактор раздела "Афиша"</a>
             <a href="/edit/reviews" type="button" class="btn btn-secondary">Редактор Отзывов</a>
+            
         </div>
 </div> <!-- col-lg-4 -->
 <div class="col-lg-12 spacing"></div>
-
+    
 <div class="col-lg-12">
-    <h3 class="text-center">Таблица "Спектакли"</h3>
+    <h3 class="text-center">Таблица "Отзывы"</h3>
 
     <table class="table">
         <thead>
         <tr>
             <th>id</th>
-            <th>Заголовок</th>
-            <th>Краткое описание</th>
-            <th>Подробное описание</th>
-            <th>Дата публикации</th>
-            <th>Путь к изображению-preview</th>
-            <th>Путь к изображению-view
-            <th>Статус</th>
-
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Дата</th>
+            <th>ID спекталя</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
-    <?php foreach($publicList as $publicItem): ?>
+    <?php foreach($reviewsList as $reviewsItem): ?>
         <tr>
-            <th scope="row"><?php echo $publicItem['id'];?></th>
-            <td><?php echo $publicItem['title'];?></td>
-            <td><?php echo $publicItem['short_content'];?></td>
-            <td><?php echo $publicItem['content'];?></td>
-            <td><?php echo $publicItem['date'];?></td>
-            <td><?php echo $publicItem['priview'];?></td>
-            <td><?php echo $publicItem['mainImg'];?></td>
-            <td><?php echo $publicItem['status'];?></td>
-
-            <td><a href="/edit/spectacle/delete/<?php echo $publicItem['id'];?>">Удалить</a></td>
+            <th scope="row"><?php echo $reviewsItem['id'];?></th>
+            <td><?php echo $reviewsItem['name'];?></td>
+            <td><?php echo $reviewsItem['surename'];?></td>
+            <td><?php echo $reviewsItem['date'];?></td>
+            <td><?php echo $reviewsItem['spectacle_id'];?></td>
+            <td><a href="/edit/reviews/delete/<?php echo $reviewsItem['id'];?>">Удалить</a></td>
         </tr>
     <?php endforeach; ?>
     </tbody>
     </table>
 
-    <a href="/edit/spectacle/create" type="button" class="btn btn-primary ">Добавить спектакль</a>
     <div class="col-lg-12 spacing"></div>
 </div><!-- col-lg-8 -->
 
