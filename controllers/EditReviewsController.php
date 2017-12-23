@@ -25,7 +25,7 @@ class EditReviewsController extends AdminBase
         
         Edit::deleteReviewsItem($id);
         header("Location: /edit/reviews");
-        
+         
         return true;
     }
 

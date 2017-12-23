@@ -44,12 +44,22 @@
 <div class="ml-auto col-md-5 mr-auto createReviewsSection"><hr>
 <form enctype="multipart/form-data" method="post">
     <div class="form-group">
+
         <label>Имя</label>
-        <input class="form-control" name="name" type="text" placeholder="Иван">
+        <input class="form-control" name="name" type="text" placeholder="Иван"
+        <?php if (isset($_COOKIE['userName'])): ?> 
+        value="<?php echo $_COOKIE['userName'];?>"
+        <?php endif; ?>>
+
     </div>
     <div class="form-group">
+
         <label>Фамилия</label>
-        <input class="form-control" name="surename" type="text" placeholder="Иванов">
+        <input class="form-control" name="surename" type="text" placeholder="Иванов" 
+        <?php if (isset($_COOKIE['userSureName'])): ?> 
+        value="<?php echo $_COOKIE['userSureName'];?>"
+        <?php endif; ?>>
+
     </div>
     <div class="form-group">
         <label>Ваш отзыв</label>

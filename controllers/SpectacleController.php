@@ -20,11 +20,13 @@ class SpectacleController
 
 
     public function actionView($id) {
+
         $spectacleList = array();
         $spectacleList = Spectacle::getPublicList();
         
         $reviewsList = array();
         $reviewsList = Reviews::getReviewsListBySpectacleId($id);
+
 
         $name = '';
         $surename = '';
@@ -35,6 +37,9 @@ class SpectacleController
             $surename = $_POST['surename'];
             $reviews = $_POST['reviews'];
             
+            setcookie("userName", $name);
+            setcookie("userSureName", $surename);
+
             Edit::createReviews($name, $surename, $reviews, $id);
             header("Location: /spectacle/view" . $id);
         }
