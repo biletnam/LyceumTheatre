@@ -13,6 +13,31 @@ class EditSpectacleController extends AdminBase
         self::checkAdmin();
         $publicList = Spectacle::getPublicListEdit();
 
+        
+        // Проверка доступа
+        self::checkAdmin();
+        $newsList = News::getNewsList();
+
+        $id = '';
+        $title = '';
+        $short_content = '';
+        $content = '';
+        $priview = '';
+        $view = '';
+        
+        if (isset($_POST['update'])) {
+            $id = $_POST['id'];
+            $title = $_POST['title'];
+            $short_content = $_POST['short_content'];
+            $content = $_POST['content'];
+            $priview = $_POST['priview'];
+            $mainImg = $_POST['mainImg'];
+   
+
+            Edit::updateSpectacle($id, $title, $short_content, $content, $priview, $mainImg);
+            header("Location: /edit/spectacle");
+        }
+
         require_once(ROOT. '/views/edit/spectacle/index.php');
         return true;
     }
@@ -25,7 +50,7 @@ class EditSpectacleController extends AdminBase
         $title = '';
         $short_content = '';
         $content = '';
-        
+    
         if (isset($_POST['submit'])) {
             $title = $_POST['title'];
             $short_content = $_POST['short_content'];

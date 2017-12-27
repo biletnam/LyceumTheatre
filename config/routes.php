@@ -11,6 +11,7 @@ return array(
     'edit/afisha' => 'editAfisha/index',
 
     //EditNews
+    'edit/news/update/([0-9]+)' => 'editNews/update/$1',
     'edit/news/create' => 'editNews/create',
     'edit/news/delete/([0-9]+)' => 'editNews/delete/$1',
     'edit/news' => 'editNews/index',

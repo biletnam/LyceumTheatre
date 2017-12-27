@@ -12,7 +12,30 @@ class EditAfishaController extends AdminBase
         // Проверка доступа
         self::checkAdmin();
         $afishaList = Afisha::getAfishaList();
+        
+        $id = '';
+        $day = '';
+        $month = '';
+        $dweek = '';
+        $spectacleName = '';
+        $adress = '';
+        $time = '';
+        $spectacleId = '';
 
+
+        if (isset($_POST['update'])) {
+            $id = $_POST['id'];
+            $day = $_POST['day'];
+            $month = $_POST['month'];
+            $dweek = $_POST['dweek'];
+            $spectacleName = $_POST['spectacleName'];
+            $adress = $_POST['adress'];
+            $time = $_POST['time'];
+            $spectacleId = $_POST['spectacleId'];
+
+            Edit::updateAfishaItem($id, $day, $month, $dweek, $spectacleName, $adress, $time, $spectacleId);
+            header("Location: /edit/afisha");
+        }
         require_once(ROOT. '/views/edit/afisha/index.php');
         return true;
     }
@@ -48,6 +71,8 @@ class EditAfishaController extends AdminBase
         require_once(ROOT . '/views/edit/afisha/create.php');
         return true;
     }
+
+    
 
     public function actionDelete($id) {
         // Проверка доступа

@@ -54,7 +54,7 @@ class News {
        
     $newsList = array();
        
-    $result = $db->query("SELECT id, title, short_content, content, date, priview FROM news ORDER BY date DESC");        
+    $result = $db->query("SELECT id, title, short_content, content, date, priview, rowTable FROM news ORDER BY date DESC");        
        
     $i = 0;
     while($row = $result->fetch()) {
@@ -64,6 +64,7 @@ class News {
          $newsList[$i]['content'] = $row['content'];
          $newsList[$i]['date'] = $row['date'];
          $newsList[$i]['priview'] = $row['priview'];
+         $newsList[$i]['rowTable'] = $row['rowTable'];
          $i++;
      }
        

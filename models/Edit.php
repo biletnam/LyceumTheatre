@@ -53,6 +53,15 @@ public static function createAfishaItem($day, $month, $dweek, $spectacleName, $a
     return $result->execute();     
 }
 
+public static function updateNews($id, $title, $short_content, $content, $rowTable, $priview) {
+    $db = Db::getConnection();
+
+    $sql = $db->query("UPDATE `news` SET `title` = '".$title."', `short_content` = '".$short_content."', `content` = '".$content.
+    "', `priview` = '".$priview."', `rowTable` = '".$rowTable ."' WHERE `news`.`id` = ".$id);
+
+    return true;
+}
+
 public static function deleteNews($id){
             
     $db = Db::getConnection();
@@ -65,6 +74,15 @@ public static function deleteNews($id){
     return $result->execute();
 }
 
+public static function updateSpectacle($id, $title, $short_content, $content, $priview, $mainImg) {
+    $db = Db::getConnection();
+
+    $sql = $db->query("UPDATE `spectacle` SET `title` = '".$title."', `short_content` = '".$short_content."', `content` = '".$content.
+    "', `priview` = '".$priview."', `mainImg` = '".$mainImg ."' WHERE `spectacle`.`id` = ".$id);
+
+    return true;
+}
+
 public static function deleteSpectacle($id){
     
 $db = Db::getConnection();
@@ -75,6 +93,15 @@ $result = $db->prepare($sql);
 $result->bindParam(':id', $id, PDO::PARAM_STR);
             
 return $result->execute();
+}
+
+public static function updateAfishaItem($id, $day, $month, $dweek, $spectacleName, $adress, $time, $spectacleId) {
+    $db = Db::getConnection();
+
+    $sql = $db->query("UPDATE `afisha` SET `day` = '".$day."', `month` = '".$month."', `dweek` = '".$dweek."', `spectacleName` = '".$spectacleName.
+    "', `adress` = '".$adress ."', `time` = '".$time ."', `spectacleId` = '".$spectacleId ."' WHERE `afisha`.`id` = ".$id);
+
+    return true;
 }
 
 public static function deleteAfishaItem($id){
@@ -104,6 +131,7 @@ public static function createReviews($name, $surename, $reviews, $spectacle_id) 
     return $result->execute();     
 }
 
+
 public static function deleteReviewsItem($id){
     
     $db = Db::getConnection();
@@ -115,7 +143,5 @@ public static function deleteReviewsItem($id){
                 
     return $result->execute();
 }
-
-
 
 }

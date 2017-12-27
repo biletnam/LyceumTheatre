@@ -13,6 +13,26 @@ class EditNewsController extends AdminBase
         self::checkAdmin();
         $newsList = News::getNewsList();
 
+        $id = '';
+        $title = '';
+        $short_content = '';
+        $content = '';
+        $rowTable = '';
+        $priview = '';
+        
+        if (isset($_POST['update'])) {
+            $id = $_POST['id'];
+            $title = $_POST['title'];
+            $short_content = $_POST['short_content'];
+            $content = $_POST['content'];
+            $rowTable = $_POST['rowTable'];
+            $priview = $_POST['priview'];
+   
+
+            Edit::updateNews($id, $title, $short_content, $content, $rowTable, $priview);
+            header("Location: /edit/news");
+        }
+
         require_once(ROOT. '/views/edit/news/index.php');
         return true;
     }
@@ -45,10 +65,12 @@ class EditNewsController extends AdminBase
             header("Location: /edit/news");
         }
         
-        // Подключаем вид
+        
         require_once(ROOT . '/views/edit/news/create.php');
         return true;
     }
+
+    
 
     public function actionDelete($id) {
         // Проверка доступа

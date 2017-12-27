@@ -5,14 +5,10 @@
     <div class="col-lg-6 adminLeftSection">
         <div class="row">
             <div class="container">
-                <div class="ml-auto col-lg-10 mr-auto info">
-                    <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and 
-                        I will give you a complete account of the system, and expound the actual teachings of the great explorer of
-                        the truth, the master-builder of human happiness. 
-                    </p>
-                    <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and 
-                            I will give you a complete account of the system, and expound the actual teachings of the great explorer of
-                            the truth, the master-builder of human happiness. 
+                <div class="ml-auto col-lg-10 mr-auto info text-center">
+                    <p>Панель Администратора || Fessracha Admin Template
+                    </p><hr>
+                    <p>Author: Shangin Eugene || Fessracha
                     </p>
                 </div>
             </div>

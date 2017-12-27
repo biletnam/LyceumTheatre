@@ -17,7 +17,7 @@
 <div class="col-lg-12">
     <h3 class="text-center">Таблица "Отзывы"</h3>
 
-    <table class="table">
+    <table class="table table-sm table-hover">
         <thead>
         <tr>
             <th>id</th>
@@ -36,7 +36,7 @@
             <td><?php echo $reviewsItem['surename'];?></td>
             <td><?php echo $reviewsItem['date'];?></td>
             <td><?php echo $reviewsItem['spectacle_id'];?></td>
-            <td><a href="/edit/reviews/delete/<?php echo $reviewsItem['id'];?>">Удалить</a></td>
+            <td><a href="/edit/reviews/delete/<?php echo $reviewsItem['id'];?>" type="button" class="btn btn-danger" style="padding: 6px; width: 100px;">Удалить</a></td>
         </tr>
     <?php endforeach; ?>
     </tbody>
