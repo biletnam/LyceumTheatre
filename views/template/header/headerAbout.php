@@ -31,7 +31,9 @@
 
         </div><!--topHeaderLine-->
         <div class="row">
-            <div class="col-md-12 text-center mainHeaderLine mainHeaderLineAbout"><p class="mainLogo">УЧЕБНЫЙ ТЕАТР "ЛИЦЕЙ" ГБПОУ СО "АКИ"</p></div>
+            <div class="col-md-12 text-center mainHeaderLine mainHeaderLineAbout">
+                <p class="mainLogo">УЧЕБНЫЙ ТЕАТР "ЛИЦЕЙ" ГБПОУ СО "АКИ"</p>
+            </div>
         </div><!--Row-->
 
 

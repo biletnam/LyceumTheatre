@@ -1,5 +1,6 @@
 <?php include ROOT . '/views/template/header/header.php'; ?>
 
+<div class="newsViewArea">
 <div class="spacing"></div>
 
 <div class="ml-auto col-md-8 mr-auto text-center viewTitle">
@@ -13,5 +14,6 @@
 </div>
 
 <div class="spacing"></div>
+</div><!--viewContainer-->
 
 <?php include ROOT . '/views/template/footer/footer.php'; ?>

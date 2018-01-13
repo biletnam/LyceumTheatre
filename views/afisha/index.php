@@ -1,7 +1,9 @@
 <?php include ROOT . '/views/template/header/header.php'; ?>
 
 <div class="spacing"></div>
-<div class="container">
+
+
+<div class="container afishaArea">
 <?php foreach($afishaList as $afishaItem): ?>
 <div class="row afishaItem">
 
@@ -22,7 +24,9 @@
 <?php endforeach; ?>
 </div><!--container-->
 
+
 <div class="spacing"></div>
 <div class="spacing"></div>
+
 
 <?php include ROOT . '/views/template/footer/footer.php'; ?>

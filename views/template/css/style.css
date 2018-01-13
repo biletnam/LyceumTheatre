@@ -151,13 +151,22 @@ li {
 .reviewsItem {
     border-bottom: 1px solid rgba(1, 1, 1, 0.411);
 }
+.afishaArea {
+    min-height: 50vh;
+}
 
 .afishaItem {
     border-top: 1px  solid rgb(1, 1, 1);
     border-bottom: 1px solid rgb(1, 1, 1);
 }
-/**********************About************************/
 
+.newsArea {
+    min-height: 50vh;
+}
+
+.newsViewArea {
+    min-height: 50vh;
+}
 
 
 /**********************Footer***********************/
@@ -168,11 +177,32 @@ li {
 }
 
 /**********************Fonts***********************/
+@media (max-width: 480px) {
+    .mainHeaderLine {
+        font-size: 14px;
+    }
+}
 
+@media (min-width:576px) {
+    .mainHeaderLine {
+      font-size: 24px;
+    }
+  }
+
+  @media (min-width:768px) {
+    .mainHeaderLine {
+      font-size: 32px;
+    }
+  }
+
+  @media (min-width:992px) {
+    .mainHeaderLine {
+      font-size: 40px;
+    }
+}
 
 .mainHeaderLine {
     line-height: 93px;
-    font-size: 3.3vw;
     font-family: 'Yeseva One', cursive;
 }
 
@@ -218,11 +248,25 @@ h4 {
     font-style: italic;
 }
 
+@media (min-width:576px) {
+    .footerTelephoneNumber p {
+      font-size: 32px;
+    }
+  }
+  @media (min-width:768px) {
+    .footerTelephoneNumber p {
+      font-size: 40px;
+    }
+  }
+  @media (min-width:992px) {
+    .footerTelephoneNumber p {
+      font-size: 48px;
+    }
+}
+
 .footerTelephoneNumber p {
     color: rgb(1,1,1);
-    font-size: 3vw;
     font-family: 'Yeseva One', cursive;
-
 }
 
 

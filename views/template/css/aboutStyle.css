@@ -20,6 +20,13 @@
     color: rgb(203,166,96);
 }
 
+
+
+.mainHeaderLine {
+    line-height: 93px;
+    font-family: 'Yeseva One', cursive;
+}
+
 .mainHeaderLine {
     height: 93px;
     background: rgb(203,166,96); 
@@ -67,6 +74,7 @@ li {
 }
 
 .producerPhoto img {
+    border-radius: 3px 3px 3px 3px;
     height: 100%;
     width: 100%;
 }
@@ -74,12 +82,22 @@ li {
 .producerDescription {
     padding: 5px 40px;
     height: auto;
-    background: rgb(203,166,96);
+    background: rgba(203, 166, 96, 0.767);
+    
 }
 
-.otherDescription{
-    background: rgb(207, 179, 128);
+.producerDescription1 {
+    border-radius: 0px 5px 5px 0px;
 }
+
+.producerDescription2 {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.producerName {
+    background: rgba(203, 166, 96, 0);
+}
+
 /**********************About************************/
 
 .aboutDescriptionSection {
@@ -97,9 +115,24 @@ li {
     color: rgb(0, 0, 0);
 }
 
+@media (min-width:576px) {
+    .mainHeaderLine {
+      font-size: 24px;
+    }
+  }
+  @media (min-width:768px) {
+    .mainHeaderLine {
+      font-size: 32px;
+    }
+  }
+  @media (min-width:992px) {
+    .mainHeaderLine {
+      font-size: 40px;
+    }
+}
+
 .mainHeaderLine {
     line-height: 93px;
-    font-size: 3.3vw;
     font-family: 'Yeseva One', cursive;
 }
 
@@ -120,10 +153,11 @@ a:hover {
     text-decoration: none; 
 }
 
-h4 {
+h1,h2,h3,h4,h5 {
     color: rgb(1,1,1);
     font-family: 'Yeseva One', cursive;
 }
+
 
 .aboutDescriptionSection p {
     font-size: 2vh;

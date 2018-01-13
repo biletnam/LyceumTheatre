@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/template/header/header.php'; ?>
 <!--Main Section-->
 
-<div class="row">
+<div class="row newsArea">
 	<!--ROW 1-->
 	<div class="ml-auto col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
 	<?php foreach($newsListR1 as $newsItem): ?>
