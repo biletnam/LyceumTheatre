@@ -115,16 +115,24 @@ li {
     color: rgb(0, 0, 0);
 }
 
+@media (max-width: 480px) {
+    .mainHeaderLine {
+        font-size: 14px;
+    }
+}
+
 @media (min-width:576px) {
     .mainHeaderLine {
       font-size: 24px;
     }
   }
+
   @media (min-width:768px) {
     .mainHeaderLine {
       font-size: 32px;
     }
   }
+
   @media (min-width:992px) {
     .mainHeaderLine {
       font-size: 40px;

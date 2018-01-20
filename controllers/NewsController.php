@@ -6,6 +6,7 @@ class NewsController
 {
 
     public function actionIndex() {
+        
         $newsListR1 = array();
         $newsListR1 = News::getNewsListRows(1);
         

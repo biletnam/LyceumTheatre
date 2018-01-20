@@ -10,6 +10,7 @@
 			<div class="card-body">
 			  <h4 class="card-title"><?php echo $newsItem['title'];?></h4>
 			  <p class="card-text"><?php echo $newsItem['short_content'];?></p>
+			  <p><?php echo $newsItem['date'];?></p>
 			  <a href="/news/view<?php echo $newsItem['id'];?>" class="btn btn-primary">ПОДРОБНЕЕ</a>
 			</div>     
 		</div>
