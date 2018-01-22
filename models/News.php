@@ -11,6 +11,8 @@ class News {
      * @param integer $id
      */
 
+    
+
     public static function getNewsItemById($id)
     {
         $id = intval($id);
@@ -29,7 +31,7 @@ class News {
     }
 
     public static function getNewsListRows($rowTable) {
-        
+    
     $db = Db::getConnection();
    
     $newsList = array();
@@ -43,12 +45,10 @@ class News {
          $newsList[$i]['title'] = $row['title'];
          $newsList[$i]['short_content'] = $row['short_content'];
          $newsList[$i]['content'] = $row['content'];
-
          // Форматируем время в вид 01.Января.2017
          $newsList[$i]['date'] = $row['DATE_FORMAT(date, "%d.%m.%Y")'];
          $dateFormat = explode('.',$newsList[$i]['date']);
          $dateFormat[1] = self::monthRuReplace($dateFormat[1]);
-         
          $newsList[$i]['date'] = implode('.',$dateFormat);
          $newsList[$i]['priview'] = $row['priview'];
          $i++;

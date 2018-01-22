@@ -9,8 +9,6 @@ class AfishaController
     public function actionIndex() {
         $afishaList = array();
         $afishaList = Afisha::getAfishaList();
-        
-        
 
         require_once(ROOT . '/views/afisha/index.php');
         return true;
