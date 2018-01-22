@@ -21,14 +21,14 @@ class News {
                         
             $db = Db::getConnection();
             
-            $result = $db->query("SELECT title, content, DATE_FORMAT(date, \"%d.%m.%Y\") FROM news WHERE id=" . $id);
+            $result = $db->query("SELECT title, content, DATE_FORMAT(date, \"%d %m %Y\"), author FROM news WHERE id=" . $id);
             $result->setFetchMode(PDO::FETCH_ASSOC);
 
             $newsItem = $result->fetch();
             // Форматируем время в вид 01.Января.2017
-            $newsItem['date'] = self::dateRuReplace($newsItem['DATE_FORMAT(date, "%d.%m.%Y")']);
+            $newsItem['date'] = self::dateRuReplace($newsItem['DATE_FORMAT(date, "%d %m %Y")']);
             //Удаляем временный элемент (форматирование даты)
-            unset($newsItem['DATE_FORMAT(date, "%d.%m.%Y")']);
+            unset($newsItem['DATE_FORMAT(date, "%d %m %Y")']);
             return $newsItem;
         }
     }
@@ -39,7 +39,7 @@ class News {
    
     $newsList = array();
     
-    $result = $db->query("SELECT id, title, short_content, content, DATE_FORMAT(date, \"%d.%m.%Y\"), priview FROM news WHERE rowTable=" . $rowTable . " ORDER BY date DESC "
+    $result = $db->query("SELECT id, title, short_content, content, DATE_FORMAT(date, \"%d %m %Y\"), priview FROM news WHERE rowTable=" . $rowTable . " ORDER BY date DESC "
             . "LIMIT ".self::SHOW_DEFAULT);        
        
     $i = 0;
@@ -49,12 +49,12 @@ class News {
          $newsList[$i]['short_content'] = $row['short_content'];
          $newsList[$i]['content'] = $row['content'];
          // Форматируем время в вид 01.Января.2017
-         $newsList[$i]['date'] = $row['DATE_FORMAT(date, "%d.%m.%Y")'];
+         $newsList[$i]['date'] = $row['DATE_FORMAT(date, "%d %m %Y")'];
          $newsList[$i]['date'] = self::dateRuReplace($newsList[$i]['date']);
          $newsList[$i]['priview'] = $row['priview'];
          $i++;
      }
-     
+
     return $newsList; 
 }
 
@@ -80,9 +80,10 @@ class News {
     
     return $newsList; 
 }
+
 public static function dateRuReplace($date){
     // Форматируем время в вид 01.Января.2017
-    $dateFormat = explode('.',$date);
+    $dateFormat = explode(' ',$date);
     
     //Замена месяца
     switch ($dateFormat[1]) {
@@ -124,52 +125,11 @@ public static function dateRuReplace($date){
             break; 
     }
 
-    $date = implode('.',$dateFormat);
+    $date = implode(' ',$dateFormat);
 
     return $date;
 }
-//Меняет месяц вида '01' => 'Декабрь' 
-/*
-public static function monthRuReplace($month){
-    switch ($month) {
-        case 01:
-            return self::DATE_MONTHS[0];
-            break;
-        case 02:
-            return self::DATE_MONTHS[1];
-            break;
-        case 03:
-            return self::DATE_MONTHS[2];
-            break;
-        case 04:
-            return self::DATE_MONTHS[3];
-            break;
-        case 05:
-            return self::DATE_MONTHS[4];
-            break;
-        case 06:
-            return self::DATE_MONTHS[5];
-            break;
-        case 07:
-            return self::DATE_MONTHS[6];
-            break;
-        case 08:
-            return self::DATE_MONTHS[7];
-            break;
-        case 09:
-            return self::DATE_MONTHS[8];
-            break;
-        case 10:
-            return self::DATE_MONTHS[9];
-            break;
-        case 11:
-            return self::DATE_MONTHS[10];
-            break;
-        case 12:
-            return self::DATE_MONTHS[11];
-            break; 
-    }
-}*/
+
 
 }
 

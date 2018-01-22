@@ -2,11 +2,11 @@
 <?php foreach($publicList as $publicItem): ?>
 <div class="row">
 
-<div class="ml-auto col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 spectacleAvatar">
+<div class="ml-auto col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 spectacleAvatar">
 	<img src="<?php echo $publicItem['priview'];?>" alt="">
 </div><!-- col-md-1 SpectacleAvatar-->
 
-<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mr-auto spectacleDescription">
+<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mr-auto spectacleDescription">
 	<div class="row">
         <div class="col-md-12 topAreaDescription">
         	<h4><?php echo $publicItem['title'];?></h4>

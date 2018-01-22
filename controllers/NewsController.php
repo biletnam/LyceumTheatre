@@ -24,7 +24,7 @@ class NewsController
     public function actionView($id) {
         if($id) {
             $newsItem = News::getNewsItemById($id);
-            var_dump($newsItem); exit();
+            
             require_once(ROOT . '/views/news/view.php');
         }
         return true;
