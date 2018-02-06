@@ -39,7 +39,7 @@
 <div class="spacing"></div>
 <?php endforeach;?>
 <?php else: ?>
-    <p class="text-center">Отзывов пока что-то нет</p>
+    <p class="text-center comment_p">Отзывов пока что-то нет</p>
 <?php endif; ?>
 <h5 class="text-center">Оставте свой отзыв</h5>
 <div class="ml-auto col-md-5 mr-auto createReviewsSection"><hr>

@@ -35,7 +35,7 @@
     <div class="row">
     <div class="col-md-12 producerName">
         <div class="spacing"></div>
-        <h5>БОЧКАРЕВА ИРИНА АНАТОЛЬЕВНА</h5>
+        <h5>Бочкарева Ирина Анатольевна</h5>
     </div><!--producer Name-->
     <div class="producerDescription producerDescription1">
     <p>Происхождение Павел Николаевич Грудинин родился 20 октября 1960 года в Москве. Через год его родители, имеющие сельскохозяйственное образование, 
@@ -47,6 +47,7 @@
     </p>
         </div><!--Producer Description-->
         </div><!--row-->
+        <hr>
 </div>
 
 <div class="col-md-12 spacing"></div>
@@ -61,7 +62,7 @@
         <div class="row">
             <div class="col-md-12 producerName">
             <div class="spacing"></div>
-            <h5>ИСАКОВА СВЕТЛАНА ЯРОСЛАВОВНА</h5>
+            <h5>Исакова Светлана Ярославовна</h5>
             <div class="spacing"></div>
         </div><!--producer Name-->
         <div class="producerDescription producerDescription2">
@@ -80,6 +81,7 @@
            </p>
            </div><!--Producer Description-->
            </div><!--row-->
+           <hr>
     </div><!--Producer Description-->
 </div>
 

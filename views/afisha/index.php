@@ -5,6 +5,7 @@
 
 <div class="container afishaArea">
 <?php foreach($afishaList as $afishaItem): ?>
+<hr>
 <div class="row afishaItem">
 
     <div class="ml-auto col-md-2 afishaItemDate text-center">
@@ -21,6 +22,7 @@
     </div>
 </div>
 <div class="ml-auto col-md-6 mr-auto spacing"></div>
+<hr>
 <?php endforeach; ?>
 </div><!--container-->
 
