@@ -16,18 +16,8 @@
 
     <div class="container-fluid topHeaderSection">
         <div class="row topHeaderLine topHeaderLine">
-            <div class="col-md-3 "><p class="telephoneNumber telephoneNumberAbout">8 (343 65) 12 312</p></div>
-            <div class="ml-auto col-md-2 social">
-                <a href="#">
-                    <img src="img/social/vk.png" alt="" height="35" width="35">
-                </a>
-                <a href="#">
-                    <img src="img/social/ok.png" alt="" height="35" width="35">
-                </a>
-                <a href="#">
-                    <img src="img/social/e.png" alt="" height="35" width="35">
-                </a>
-            </div><!--social-->
+            <div class="col-md-3 mr-auto"><p class="telephoneNumber telephoneNumberAbout">8 (343 65) 12 312</p></div>
+            
 
         </div><!--topHeaderLine-->
         <div class="row">

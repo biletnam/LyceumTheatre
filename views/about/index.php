@@ -14,7 +14,7 @@
     <div class="col-md-12 spacing"></div>
     <div class="col-md-12 spacing"></div>
     <div class="col-md-12 spacing"></div>
-    <h3>СОСТАВ ПЕДАГОГОВ ОТДЕЛЕНИЯ ТЕАТРАЛЬНОГО ТВОРЧЕСТВА</h3><hr>
+    <h3>Состав педагогов отделения театрального творчества</h3><hr>
 </div><!--col-md-12 aboutDescriptionSection-->
 <div class="col-md-12 spacing"></div>
 <div class="col-md-12 spacing"></div>
@@ -27,31 +27,24 @@
 
  <!--Producer Description-->
 
-<div class="ml-auto col-xs-12 col-sm-12 col-md-2 producerPhoto">
-        <img src="views/template/img/about/producerDescription/bochkareva.jpg" alt="">
+<div class="ml-auto col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2 producerPhoto">
+        <img src="views/template/img/about/producerDescription/bochkareva.jpg" alt="" class="test">
 </div>
 
-<div class="col-xs-12 col-sm-12 col-md-6 mr-auto">
+<div class="ml-auto col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 mr-auto">
     <div class="row">
     <div class="col-md-12 producerName">
         <div class="spacing"></div>
-        <h4>БОЧКАРЕВА ИРИНА АНАТОЛЬЕВНА</h4>
-        <div class="spacing"></div>
+        <h5>БОЧКАРЕВА ИРИНА АНАТОЛЬЕВНА</h5>
     </div><!--producer Name-->
     <div class="producerDescription producerDescription1">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit repudiandae voluptate voluptatibus neque esse? 
-        Nihil sequi temporibus expedita libero molestiae eaque, ipsam minus quae recusandae fugit sunt architecto suscipit?
-         Veniam.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit repudiandae voluptate voluptatibus neque esse? 
-        Nihil sequi temporibus expedita libero molestiae eaque, ipsam minus quae recusandae fugit sunt architecto suscipit?
-         Veniam.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit repudiandae voluptate voluptatibus neque esse? 
-        Nihil sequi temporibus expedita libero molestiae eaque, ipsam minus quae recusandae fugit sunt architecto suscipit?
-         Veniam.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit repudiandae voluptate voluptatibus neque esse? 
-        Nihil sequi temporibus expedita libero molestiae eaque, ipsam minus quae recusandae fugit sunt architecto suscipit?
-         Veniam.
-        </p>
+    <p>Происхождение Павел Николаевич Грудинин родился 20 октября 1960 года в Москве. Через год его родители, имеющие сельскохозяйственное образование, 
+    переехали в Ленинский район Московской области. Дедушка и бабушка родом с Вологодчины. По национальности, по его собственному утверждению — «русский,
+    но не совсем: мать — Пищик Серафима Зиновьевна, дед Зиновий по национальности — еврей».
+    После окончания школы в 1977 году поступил в Московский институт инженеров сельскохозяйственного производства (МИИСП) им. Горячкина, выбрав профессию
+    сельскохозяйственного инженера.
+    В 2001 году получил второе высшее образование — окончил Российскую академию государственной службы при Президенте РФ по специальности «юриспруденция»
+    </p>
         </div><!--Producer Description-->
         </div><!--row-->
 </div>
@@ -60,11 +53,15 @@
 
 <!--Producer Description-->
 
-    <div class="ml-auto col-xs-12 col-sm-12 col-md-6">
+    <div class="ml-auto col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2 producerPhoto">
+        <img src="views/template/img/about/producerDescription/isakova.jpg" alt="">
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 ml-auto col-xl-8 mr-auto">
         <div class="row">
             <div class="col-md-12 producerName">
             <div class="spacing"></div>
-            <h4>ИСАКОВА СВЕТЛАНА ЯРОСЛАВОВНА</h4>
+            <h5>ИСАКОВА СВЕТЛАНА ЯРОСЛАВОВНА</h5>
             <div class="spacing"></div>
         </div><!--producer Name-->
         <div class="producerDescription producerDescription2">
@@ -84,10 +81,6 @@
            </div><!--Producer Description-->
            </div><!--row-->
     </div><!--Producer Description-->
-
-    <div class="mr-auto col-xs-12 col-sm-12 col-md-2 producerPhoto producerPhoto">
-        <img src="views/template/img/about/producerDescription/isakova.jpg" alt="">
-    </div>
 </div>
 
 <div class="col-md-12 spacing"></div>

@@ -25,7 +25,8 @@
 
 <!--********SPECTACLE REVIEWS SECTION*********-->
 
-<div class="text-center"><h3>Отзывы зрителей</h3></div>
+<div class="text-center"><h3>Отзывы зрителей</h3><hr></div>
+
 <div class="spacing"></div>
 <?php if (!empty($reviewsList)): ?>
 <?php foreach($reviewsList as $reviewsItem): ?>

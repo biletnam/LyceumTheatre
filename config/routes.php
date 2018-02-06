@@ -35,8 +35,8 @@ return array(
     'user/user-auth' => 'user/auth',
 
     
-    //Publication      controller  action
-    'about' => 'publication/about',
+    //About
+    'about' => 'about/index',
 
     //News
     'news/view([0-9]+)' => 'news/view/$1',

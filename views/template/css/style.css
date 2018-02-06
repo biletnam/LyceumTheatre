@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
 
 
@@ -13,7 +12,7 @@
     padding-left: 150px;
 }
 .telephoneNumber {
-    padding-top: 10px; 
+    padding-top: 17px; 
 }
 
 .telephoneNumber {
@@ -73,7 +72,7 @@ li {
     border-color: rgb(1, 1, 1);
 }
 
-.producerPhoto {
+.producerPhoto img {
     padding: 0px;
 }
 
@@ -108,7 +107,7 @@ li {
 
 .spectacleAvatar {
     padding: 0px;
-    height: 450px;
+    height: 650px;
 }
 
 .spectacleAvatar img {
@@ -137,7 +136,7 @@ li {
 }
 
 .topAreaDescription {
-    height: 390px;
+    height: 590px;
 }
 
 .buttonAreaDescription {
@@ -179,7 +178,7 @@ li {
 /**********************Fonts***********************/
 @media (max-width: 480px) {
     .mainHeaderLine {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -207,7 +206,7 @@ li {
 }
 
 .telephoneNumber {
-    font-size: 1vw;
+    font-size: 100%;
     font-family: 'Yeseva One', cursive;
 }
 
@@ -238,14 +237,13 @@ h4 {
 }
 
 .footerInfo p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
-    font-style: italic;
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
+    
 }
 
 .card-text {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-style: italic;
+    font-family: 'Old Standard TT', serif;
 }
 
 @media (min-width:576px) {
@@ -273,19 +271,18 @@ h4 {
 
 .afishaItemInfo p {
     font-size: 20px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-style: italic;
+    font-family: 'Old Standard TT', serif;
 }
 
 .spectacleDescription p {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Old Standard TT', serif;
     font-style: italic;
-    font-size: 2.1vh;
+    font-size: 20px;
 }
 
 .viewDescription p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
 }
 
 

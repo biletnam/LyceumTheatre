@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
 
 
@@ -13,7 +14,7 @@
     padding-left: 150px;
 }
 .telephoneNumber {
-    padding-top: 10px; 
+    padding-top: 15px; 
 }
 
 .telephoneNumberAbout {
@@ -68,34 +69,22 @@ li {
     border-color: rgb(1, 1, 1);
 }
 
-.producerPhoto {
-    padding-right: 0;
-    padding-left: 0;
-}
 
-.producerPhoto img {
-    border-radius: 3px 3px 3px 3px;
-    height: 100%;
-    width: 100%;
-}
 
 .producerDescription {
-    padding: 5px 40px;
+    padding: 15px 55px;
     height: auto;
-    background: rgba(203, 166, 96, 0.767);
-    
 }
 
-.producerDescription1 {
-    border-radius: 0px 5px 5px 0px;
-}
 
-.producerDescription2 {
-    border-radius: 5px 0px 0px 5px;
-}
 
 .producerName {
     background: rgba(203, 166, 96, 0);
+}
+
+.producerName h5 {
+    padding-left: 40px;
+    line-height: 35px;
 }
 
 /**********************About************************/
@@ -117,7 +106,7 @@ li {
 
 @media (max-width: 480px) {
     .mainHeaderLine {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -145,7 +134,7 @@ li {
 }
 
 .telephoneNumber {
-    font-size: 1vw;
+    font-size: 100%;
     font-family: 'Yeseva One', cursive;
 }
 
@@ -166,18 +155,21 @@ h1,h2,h3,h4,h5 {
     font-family: 'Yeseva One', cursive;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 
 .aboutDescriptionSection p {
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
-    font-family: 'Yeseva One', cursive;
-    font-style: italic;
+    font-family: 'Old Standard TT', serif;
 }
 
 .footerInfo p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
-    font-style: italic;
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
+    
 }
 
 .footerTelephoneNumber p {
@@ -187,10 +179,9 @@ h1,h2,h3,h4,h5 {
 }
 
 .producerDescription p {
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
-    font-family: 'Yeseva One', cursive;
-    font-style: italic;
+    font-family: 'Old Standard TT', serif;
 }
 
 /**********************Other***********************/
