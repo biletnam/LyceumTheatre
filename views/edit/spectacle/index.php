@@ -21,11 +21,12 @@
         <tr>
             <th>id</th>
             <th>Заголовок</th>
-            <th>Краткое описание</th>
             <th>Подробное описание</th>
             <th>Дата публикации</th>
             <th>Путь к изображению-preview</th>
-            <th>Путь к изображению-view</th>
+            <th>Режиссер</th>
+            <th>Жанр</th>
+            <th>Продолжительность спектакля</th>
             <th></th>
             <th></th>
         </tr>
@@ -36,11 +37,12 @@
         <tr>
             <th scope="row"><input class="text-center" type="text" name="id" value="<?php echo $publicItem['id'];?>" style="width: 30px;"></th>
             <td><textarea rows="7" name="title" style="width: 250px;"><?php echo $publicItem['title'];?></textarea></td>
-            <td><textarea rows="15" name="short_content" style="width: 300px;"><?php echo $publicItem['short_content'];?></textarea></td>
             <td><textarea rows="15" name="content" style="width: 300px;"><?php echo $publicItem['content'];?></textarea></td>
             <td><?php echo $publicItem['date'];?></td>
             <td><textarea rows="7" name="priview" style="width: 200px;"><?php echo $publicItem['priview'];?></textarea></td>
-            <td><textarea rows="7" name="maingImg" style="width: 200px;"><?php echo $publicItem['mainImg'];?></textarea></td>
+            <td><textarea rows="7" name="producer" style="width: 200px;"><?php echo $publicItem['producer'];?></textarea></td>
+            <td><textarea rows="4" name="genre" style="width: 200px;"><?php echo $publicItem['genre'];?></textarea></td>
+            <td><textarea rows="4" name="duration" style="width: 200px;"><?php echo $publicItem['duration'];?></textarea></td>
             <td><button name="update" type="submit" class="btn btn-primary">Обновить</button></td>
             <td><a href="/edit/spectacle/delete/<?php echo $publicItem['id'];?>" type="button" class="btn btn-danger" style="padding: 6px; width: 100px;">Удалить</a></td>
         </tr>

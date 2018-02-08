@@ -28,7 +28,7 @@
  <!--Producer Description-->
 
 <div class="ml-auto col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2 producerPhoto">
-        <img src="views/template/img/about/producerDescription/bochkareva.jpg" alt="" class="test">
+        <img src="views/template/img/about/producerDescription/bochkareva.jpg" alt="">
 </div>
 
 <div class="ml-auto col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 mr-auto">

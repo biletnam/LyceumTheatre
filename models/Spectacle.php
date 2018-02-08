@@ -25,7 +25,8 @@ class Spectacle {
         }
     }
 
-    public static function getPublicList($page = 1) {
+    public static function getPublicList($page = 1) 
+    {
         
     $db = Db::getConnection();
        
@@ -34,46 +35,51 @@ class Spectacle {
        
     $publicList = array();
        
-    $result = $db->query("SELECT id, title, short_content, content, date, priview, mainImg, status FROM spectacle ORDER BY date DESC "
+    $result = $db->query("SELECT id, title, content, date, priview, producer, genre, duration FROM spectacle ORDER BY date DESC "
             . "LIMIT ".self::SHOW_DEFAULT
             . " OFFSET " . $offset);        
        
     $i = 0;
-    while($row = $result->fetch()) {
-         $publicList[$i]['id'] = $row['id'];
-         $publicList[$i]['title'] = $row['title'];
-         $publicList[$i]['short_content'] = $row['short_content'];
-         $publicList[$i]['content'] = $row['content'];
-         $publicList[$i]['date'] = $row['date'];
-         $publicList[$i]['priview'] = $row['priview'];
-         $publicList[$i]['status'] = $row['status'];
-         $publicList[$i]['mainImg'] = $row['mainImg'];
-         $i++;
-     }
+    while($row = $result->fetch()) 
+    {
+        $publicList[$i]['id'] = $row['id'];
+        $publicList[$i]['title'] = $row['title'];
+        $publicList[$i]['content'] = $row['content'];
+        $publicList[$i]['date'] = $row['date'];
+        $publicList[$i]['priview'] = $row['priview'];
+        $publicList[$i]['producer'] = $row['producer'];
+        $publicList[$i]['genre'] = $row['genre'];
+        $publicList[$i]['duration'] = $row['duration'];
+        $i++;
+    }
        
-    return $publicList; }
+    return $publicList; 
+}
 
-    public static function getPublicListEdit($page = 1) {
+    public static function getPublicListEdit($page = 1) 
+    {
         
     $db = Db::getConnection();
        
     $publicList = array();
        
-    $result = $db->query("SELECT id, title, short_content, content, date, priview, mainImg, status FROM spectacle ORDER BY date DESC");        
+    $result = $db->query("SELECT id, title, content, date, priview, producer, genre, duration FROM spectacle ORDER BY date DESC");        
        
     $i = 0;
-    while($row = $result->fetch()) {
-         $publicList[$i]['id'] = $row['id'];
-         $publicList[$i]['title'] = $row['title'];
-         $publicList[$i]['short_content'] = $row['short_content'];
-         $publicList[$i]['content'] = $row['content'];
-         $publicList[$i]['date'] = $row['date'];
-         $publicList[$i]['priview'] = $row['priview'];
-         $publicList[$i]['status'] = $row['status'];
-         $publicList[$i]['mainImg'] = $row['mainImg'];
-         $i++;
+    while($row = $result->fetch()) 
+    {
+        $publicList[$i]['id'] = $row['id'];
+        $publicList[$i]['title'] = $row['title'];
+        $publicList[$i]['content'] = $row['content'];
+        $publicList[$i]['date'] = $row['date'];
+        $publicList[$i]['priview'] = $row['priview'];
+        $publicList[$i]['producer'] = $row['producer'];
+        $publicList[$i]['genre'] = $row['genre'];
+        $publicList[$i]['duration'] = $row['duration'];
+        $i++;
      }
        
-    return $publicList; }
+    return $publicList; 
+}
 
 }

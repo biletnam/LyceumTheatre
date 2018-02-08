@@ -3,20 +3,21 @@
 class Edit {
 
     
-public static function createSpectacle($title, $short_content, $content, $priview, $mainImg) {
+public static function createSpectacle($title, $content, $priview, $producer, $genre, $duration) {
     $db = Db::getConnection();
     
-    $sql = 'INSERT INTO spectacle (title, short_content, content, priview, mainImg) '
-            . 'VALUES (:title, :short_content, :content, :priview, :mainImg)';
+    $sql = 'INSERT INTO spectacle (title, content, priview, producer, genre, duration) '
+            . 'VALUES (:title, :content, :priview, :producer, :genre, :duration)';
     
     $result = $db->prepare($sql);
     $result->bindParam(':title', $title, PDO::PARAM_STR);
-    $result->bindParam(':short_content', $short_content, PDO::PARAM_STR);
     $result->bindParam(':content', $content, PDO::PARAM_STR);
     $result->bindParam(':priview', $priview, PDO::PARAM_STR);
-    $result->bindParam(':mainImg', $mainImg, PDO::PARAM_STR);
-
-    return $result->execute();     
+    $result->bindParam(':producer', $producer, PDO::PARAM_STR);
+    $result->bindParam(':genre', $genre, PDO::PARAM_STR);
+    $result->bindParam(':duration', $duration, PDO::PARAM_STR);
+     
+    return $result->execute();
 }
 
 public static function createNews($title, $short_content, $content, $rowTable, $priview) {
@@ -74,11 +75,12 @@ public static function deleteNews($id){
     return $result->execute();
 }
 
-public static function updateSpectacle($id, $title, $short_content, $content, $priview, $mainImg) {
+public static function updateSpectacle($id, $title, $content, $priview, $producer, $genre, $duration) {
     $db = Db::getConnection();
 
-    $sql = $db->query("UPDATE `spectacle` SET `title` = '".$title."', `short_content` = '".$short_content."', `content` = '".$content.
-    "', `priview` = '".$priview."', `mainImg` = '".$mainImg ."' WHERE `spectacle`.`id` = ".$id);
+    $sql = $db->query("UPDATE `spectacle` SET `title` = '".$title."', `content` = '".$content.
+    "', `priview` = '".$priview."', `producer` = '".$producer."', `genre` = '".$genre."', `duration` = '".$duration.
+    "' WHERE `spectacle`.`id` = ".$id);
 
     return true;
 }

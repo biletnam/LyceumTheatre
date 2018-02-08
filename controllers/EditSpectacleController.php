@@ -20,21 +20,25 @@ class EditSpectacleController extends AdminBase
 
         $id = '';
         $title = '';
-        $short_content = '';
         $content = '';
         $priview = '';
-        $view = '';
+        $producer = '';
+        $genre = '';
+        $duration = '';
+
         
         if (isset($_POST['update'])) {
             $id = $_POST['id'];
             $title = $_POST['title'];
-            $short_content = $_POST['short_content'];
             $content = $_POST['content'];
             $priview = $_POST['priview'];
-            $mainImg = $_POST['mainImg'];
+            $producer = $_POST['producer'];
+            $genre = $_POST['genre'];
+            $duration = $_POST['duration'];
+
    
 
-            Edit::updateSpectacle($id, $title, $short_content, $content, $priview, $mainImg);
+            Edit::updateSpectacle($id, $title, $content, $priview, $producer, $genre, $duration);
             header("Location: /edit/spectacle");
         }
 
@@ -48,16 +52,20 @@ class EditSpectacleController extends AdminBase
         self::checkAdmin();
         
         $title = '';
-        $short_content = '';
         $content = '';
+        $priview = '';
+        $producer = '';
+        $genre = '';
+        $duration = '';
     
         if (isset($_POST['submit'])) {
             $title = $_POST['title'];
-            $short_content = $_POST['short_content'];
             $content = $_POST['content'];
+            $producer = $_POST['producer'];
+            $genre = $_POST['genre'];
+            $duration = $_POST['duration'];
             $pathToImg = '/views/template/img/spectacle/';
-            $preview = '';
-            $view = '';
+
 
             if(!empty($_FILES['preview']['tmp_name'])){
                 $preview = $pathToImg . $_FILES['preview']['name'];
@@ -67,9 +75,8 @@ class EditSpectacleController extends AdminBase
                 $view = $pathToImg . $_FILES['view']['name'];
             }
             
-            Edit::createSpectacle($title, $short_content, $content, $preview, $view);
+            Edit::createSpectacle($title, $content, $priview, $producer, $genre, $duration);
             move_uploaded_file($_FILES['preview']['tmp_name'], ROOT . $pathToImg .$_FILES['preview']['name']);
-            move_uploaded_file($_FILES['view']['tmp_name'], ROOT . $pathToImg .$_FILES['view']['name']);
             header("Location: /edit/spectacle");
         }
         

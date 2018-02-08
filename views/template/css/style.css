@@ -109,26 +109,13 @@ li {
     padding-top: 35px;
 }
 
-
-.spectacleAvatar {
-    padding: 0px;
-    height: 650px;
-}
-
-.spectacleAvatar img {
-    height: 100%;
-    width: 100%;
-}
-
-.spectacleImage img {
-    height: 100%;
-    width: 100%;
+.col-lg-3 .spectacleImage  {
+    padding-left: 0px;
 }
 
 .spectacleDescription {
     height: auto;
     padding: 15px 20px;
-    background: rgb(203,166,96);
 }
 
 .spectacleDescription a {
@@ -140,9 +127,6 @@ li {
     background: rgb(0, 0, 0);
 }
 
-.topAreaDescription {
-    height: 590px;
-}
 
 .buttonAreaDescription {
     padding: 0;
@@ -218,7 +202,7 @@ hr {
 }
 
 a {
-    font-size: 20px;
+    font-size: 17px;
     color: rgb(1,1,1);
     font-family: 'Yeseva One', cursive;
 }
@@ -289,7 +273,6 @@ i {
 
 .spectacleDescription p {
     font-family: 'Old Standard TT', serif;
-    font-style: italic;
     font-size: 20px;
 }
 
